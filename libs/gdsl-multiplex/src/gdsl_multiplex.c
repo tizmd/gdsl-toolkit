@@ -15,6 +15,9 @@
 #include <dlfcn.h>
 
 #include <gdsl_multiplex.h>
+#ifndef MEMSTREAM_H
+#include <memstream.h>
+#endif
 
 static char frontend_get(struct frontend_desc *desc, char *file) {
   size_t length = strlen(file);
